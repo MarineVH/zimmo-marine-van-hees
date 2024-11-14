@@ -12,6 +12,19 @@ button {
     justify-content: center;
   }
 
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.btn:hover .icon {
+    filter: brightness(0) invert(1);
+}
+
+.selected .icon {
+    filter: brightness(0) invert(1);
+}
+
 .btn-neutral {
     background-color: #fef8f8;
 }
