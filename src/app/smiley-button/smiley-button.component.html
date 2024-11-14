@@ -1,0 +1,8 @@
+<button class="btn" 
+        type="button" 
+        (click)="onClick()" 
+        [ngClass]="[getButtonClass()]">
+        
+        <img [src]="getIconPath()" alt="{{ feeling }} icon" class="icon">
+        
+</button>

@@ -1,0 +1,79 @@
+button {
+    font-size: 2rem;
+    padding: 32px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.btn-neutral {
+    background-color: #fef8f8;
+}
+  
+.btn-good {
+    background-color: #fdf1d2;
+}
+  
+.btn-very-good {
+    background-color: #fcffd9;
+}
+
+.btn-very-very-good {
+    background-color: #D7F1BD;
+}
+
+.btn-love {
+    background-color: #d7ffeb;
+}
+
+.btn-neutral:hover {
+    background-color: #f65455;
+    color: white;
+}
+
+.btn-good:hover {
+    background-color: #f9b009;
+    color: white;
+}
+
+.btn-very-good:hover {
+    background-color: #fbde27;
+    color: white;
+}
+
+.btn-very-very-good:hover {
+    background-color: #a1e36d;
+    color: white;
+}
+
+.btn-love:hover {
+    background-color: #3fd472;
+    color: white;
+}
+
+.btn-neutral.selected {
+    background-color: #f65455;
+    color: white;
+}
+.btn-good.selected {
+    background-color: #f9b009;
+    color: white;
+}
+.btn-very-good.selected {
+    background-color: #fbde27;
+    color: white;
+}
+.btn-very-very-good.selected {
+    background-color: #a1e36d;
+    color: white;
+}
+.btn-love.selected {
+    background-color: #3fd472;
+    color: white;
+}

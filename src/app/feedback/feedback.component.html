@@ -1,0 +1,16 @@
+<div class="feedback-container">
+    <h2 class="feedback">Hoe eenvoudig kon je je huis online plaatsen?</h2>
+
+    <div class="feedback-buttons">
+        <app-smiley-button feeling="neutral" [selectedFeeling]="selectedFeeling" (selected)="openFeedback($event)"></app-smiley-button>
+        <app-smiley-button feeling="good" [selectedFeeling]="selectedFeeling" (selected)="openFeedback($event)"></app-smiley-button>
+        <app-smiley-button feeling="veryGood" [selectedFeeling]="selectedFeeling" (selected)="openFeedback($event)"></app-smiley-button>
+        <app-smiley-button feeling="veryVeryGood" [selectedFeeling]="selectedFeeling" (selected)="openFeedback($event)"></app-smiley-button>
+        <app-smiley-button feeling="love" [selectedFeeling]="selectedFeeling" (selected)="openFeedback($event)"></app-smiley-button>
+    </div>
+</div>
+
+<div *ngIf="showFeedback" class="feedback-input">
+    <textarea [(ngModel)]="feedbackText" placeholder="Écrivez votre feedback ici..."></textarea>
+    <button (click)="submitFeedback()">Verzenden</button>
+</div>
