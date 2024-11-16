@@ -1,18 +1,16 @@
 .feedback-container {
     position: relative;
     text-align: center;
-    margin-top: 54px;
-    padding: 40px;
+    margin: 5% 20%;
   }
 
 .feedback {
     position: relative;
-    width: 50%;
     display: inline-block;
     background-color: #54bcff;
     color: white;
-    padding: 60px;
-    border-radius: 70px;
+    padding: 40px 120px 55px 120px;
+    border-radius: 100px;
 }
 
 .feedback-buttons {
@@ -26,22 +24,33 @@
 }
   
 .feedback-input {
+    text-align: center;
     margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
 }
   
 textarea {
     width: 50%;
     height: 80px;
-    margin-top: 10px;
+    margin: 15px 0;
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
+.feedback-privacy {
+    margin: 0 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 button {
-    width: 10%;
+    background-color: #f9af05;
+    color: #fff;
+    border: solid;
+    border-color: #f9af05;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
 }

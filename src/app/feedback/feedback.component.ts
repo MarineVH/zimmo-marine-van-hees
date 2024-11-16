@@ -25,8 +25,9 @@ export class FeedbackComponent {
 
   submitFeedback() {
     console.log('Feedback:', this.feedbackText);
+    console.log('Feeling:', this.selectedFeeling);
     this.feedbackText = '';
-    this.showFeedback = false;
     this.selectedFeeling = '';
+    this.showFeedback = false;
   }
 }

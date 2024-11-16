@@ -1,5 +1,5 @@
-<div class="feedback-container">
-    <h2 class="feedback">Hoe eenvoudig kon je je huis online plaatsen?</h2>
+<section class="feedback-container">
+    <h3 class="feedback">Hoe eenvoudig kon je je huis online plaatsen?</h3>
 
     <div class="feedback-buttons">
         <app-smiley-button feeling="neutral" [selectedFeeling]="selectedFeeling" (selected)="openFeedback($event)"></app-smiley-button>
@@ -8,9 +8,13 @@
         <app-smiley-button feeling="veryVeryGood" [selectedFeeling]="selectedFeeling" (selected)="openFeedback($event)"></app-smiley-button>
         <app-smiley-button feeling="love" [selectedFeeling]="selectedFeeling" (selected)="openFeedback($event)"></app-smiley-button>
     </div>
-</div>
+</section>
 
-<div *ngIf="showFeedback" class="feedback-input">
-    <textarea [(ngModel)]="feedbackText" placeholder="Écrivez votre feedback ici..."></textarea>
-    <button (click)="submitFeedback()">Verzenden</button>
-</div>
+<section *ngIf="showFeedback" class="feedback-input">
+    <h2 class="feedback-title">Geef je graag wat meer uitleg?</h2>
+    <textarea [(ngModel)]="feedbackText" placeholder=""></textarea>
+    <div class="feedback-privacy">
+        <p>Wij verwerken uw gegevens conform onze privacy policy</p>
+        <button (click)="submitFeedback()">Verzenden</button>
+    </div>
+</section>
