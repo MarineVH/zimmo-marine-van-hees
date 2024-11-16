@@ -1,4 +1,9 @@
 .cards-container {
     background-color: #f7fafc;
-    height: 100vh;
+    padding: 53px 58px;
+    text-align: center;
+}
+
+.title {
+    margin: 20px 0 50px;
 }
