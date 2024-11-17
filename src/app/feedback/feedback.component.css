@@ -1,7 +1,7 @@
 .feedback-container {
     position: relative;
     text-align: center;
-    margin: 5% 20%;
+    margin: 3% 25%;
   }
 
 .feedback {
@@ -9,7 +9,9 @@
     display: inline-block;
     background-color: #54bcff;
     color: white;
-    padding: 40px 120px 55px 120px;
+    width: 100%;
+    height: 110px;
+    padding: 35px 0 0;
     border-radius: 100px;
 }
 
@@ -25,7 +27,7 @@
   
 .feedback-input {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 70px;
 }
   
 textarea {
@@ -74,11 +76,10 @@ button {
 }
 
 .successMessage {
-    margin: 0 25%;
+    margin: 70px 25% 0;
     background-color: #d5f5db;
     color: #70dd72;
     font-size: 14px;
     font-weight: lighter;
-    margin-top: 10px;
     padding: 15px 0 15px 15px;
   }
