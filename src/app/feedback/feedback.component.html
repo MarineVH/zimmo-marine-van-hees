@@ -12,9 +12,16 @@
 
 <section *ngIf="showFeedback" class="feedback-input">
     <h3 class="feedback-title">Geef je graag wat meer uitleg?</h3>
-    <textarea [(ngModel)]="feedbackText" placeholder=""></textarea>
+    <textarea 
+        [(ngModel)]="feedbackText"
+        placeholder=""
+        [ngClass]="{'error-border': showError}"
+    ></textarea>
+    <div *ngIf="showError" class="error-message">Mag niet leeg zijn.</div>
     <div class="feedback-privacy">
         <p>Wij verwerken uw gegevens conform onze privacy policy</p>
         <button (click)="submitFeedback()">Verzenden</button>
     </div>
 </section>
+
+<div *ngIf="successMessage" class="successMessage">{{ successMessage }}</div>

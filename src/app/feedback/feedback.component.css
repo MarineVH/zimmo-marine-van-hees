@@ -31,7 +31,7 @@
 textarea {
     width: 50%;
     height: 80px;
-    margin: 15px 0;
+    margin: 15px 0 0;
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
@@ -39,11 +39,28 @@ textarea {
     resize: vertical;
 }
 
-.feedback-privacy {
+textarea.error-border {
+    border: 1px solid #f65455;
+}
+
+.error-message {
+    color: #f65455;
+    font-size: 14px;
+    font-style: italic;
+    display: flex;
     margin: 0 25%;
+    font-weight: lighter;
+}
+
+.feedback-privacy {
+    margin: 15px 25% 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 button {
@@ -55,3 +72,13 @@ button {
     padding: 10px 15px;
     font-weight: bold;
 }
+
+.successMessage {
+    margin: 0 25%;
+    background-color: #d5f5db;
+    color: #70dd72;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 10px;
+    padding: 15px 0 15px 15px;
+  }
