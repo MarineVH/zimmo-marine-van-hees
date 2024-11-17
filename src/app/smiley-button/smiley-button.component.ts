@@ -12,7 +12,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class SmileyButtonComponent {
   @Input() feeling: string = 'neutral';
-  @Input() selectedFeeling: string = ''; 
+  @Input() selectedFeeling: string = '';
+  @Input() disabled: boolean = false; 
 
   @Output() selected = new EventEmitter<string>();
 

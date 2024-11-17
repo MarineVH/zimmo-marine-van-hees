@@ -2,11 +2,11 @@
     <h3 class="feedback">Hoe eenvoudig kon je je huis online plaatsen?</h3>
 
     <div class="feedback-buttons">
-        <app-smiley-button feeling="neutral" [selectedFeeling]="selectedFeeling" (selected)="openFeedback($event)"></app-smiley-button>
-        <app-smiley-button feeling="good" [selectedFeeling]="selectedFeeling" (selected)="openFeedback($event)"></app-smiley-button>
-        <app-smiley-button feeling="veryGood" [selectedFeeling]="selectedFeeling" (selected)="openFeedback($event)"></app-smiley-button>
-        <app-smiley-button feeling="veryVeryGood" [selectedFeeling]="selectedFeeling" (selected)="openFeedback($event)"></app-smiley-button>
-        <app-smiley-button feeling="love" [selectedFeeling]="selectedFeeling" (selected)="openFeedback($event)"></app-smiley-button>
+        <app-smiley-button feeling="neutral" [selectedFeeling]="selectedFeeling" [disabled]="feedbackSent" (selected)="openFeedback($event)"></app-smiley-button>
+        <app-smiley-button feeling="good" [selectedFeeling]="selectedFeeling" [disabled]="feedbackSent" (selected)="openFeedback($event)"></app-smiley-button>
+        <app-smiley-button feeling="veryGood" [selectedFeeling]="selectedFeeling" [disabled]="feedbackSent" (selected)="openFeedback($event)"></app-smiley-button>
+        <app-smiley-button feeling="veryVeryGood" [selectedFeeling]="selectedFeeling" [disabled]="feedbackSent" (selected)="openFeedback($event)"></app-smiley-button>
+        <app-smiley-button feeling="love" [selectedFeeling]="selectedFeeling" [disabled]="feedbackSent" (selected)="openFeedback($event)"></app-smiley-button>
     </div>
 </section>
 

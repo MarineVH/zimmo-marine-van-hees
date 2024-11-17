@@ -20,8 +20,10 @@ export class FeedbackComponent {
   selectedFeeling = '';
   showError = false;
   successMessage = '';
+  feedbackSent = false;
 
   openFeedback(feeling: string) {
+    if (this.feedbackSent) return;
     this.selectedFeeling = feeling;
     this.showFeedback = true;
     this.successMessage = '';
@@ -40,6 +42,7 @@ export class FeedbackComponent {
       this.showFeedback = false;
       this.showError = false;
       this.successMessage = 'Feedback met succes verzonden!';
+      this.feedbackSent = true;
     }
   }
 }
