@@ -5,5 +5,10 @@
 }
 
 .title {
-    margin: 20px 0 50px;
+    margin: 5px 0 40px;
+}
+
+.cards-content {
+    display: flex;
+    justify-content: space-between;
 }

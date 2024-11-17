@@ -1,4 +1,11 @@
 <section class="cards-container">
     <h2 class="title">Hoe verkoop je het beste een huis?</h2>
-    <app-card></app-card>
+    <div class="cards-content">
+        <app-card 
+            *ngFor="let card of cards"
+            [title]="card.title"
+            [description]="card.description"
+            [imageUrl]="card.imageUrl"
+        ></app-card>
+    </div>
 </section>

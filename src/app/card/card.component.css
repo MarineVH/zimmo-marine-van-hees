@@ -6,12 +6,17 @@
     text-align: left;
 }
 
+img {
+    height: 133px;
+    object-fit: cover;
+}
+
 .card-title {
     font-weight: bold;
     margin-top: 30px;
 }
 
-h4, p {
+h5, p {
     margin: 0 30px 15px;
 }
 
